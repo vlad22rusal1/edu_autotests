@@ -27,7 +27,7 @@ try:
         text_f = browser.find_element(By.CSS_SELECTOR, "p.smart-hints__hint")
 
         text_found = text_f.text
-        if (text_found == "Correct!"):
+        if text_found == "Correct!":
             assert True
         else:
             print(text_found)
